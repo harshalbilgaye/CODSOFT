@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Agency Landing Page</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff6c6c;
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav {
+      display: flex;
+      gap: 1rem;
+    }
+    .nav a {
+      color: #fff;
+      padding: 0.5rem 1rem;
+      background-color: #ff4081;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('hero-image.jpg') center/cover;
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .hero .buttons {
+      margin-top: 1.5rem;
+    }
+    .hero .btn {
+      padding: 0.7rem 1.5rem;
+      margin: 0.5rem;
+      background-color: #ff4081;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 1rem;
+      background: linear-gradient(to right, #ff6c6c, #ffb199);
+      color: #fff;
+      text-align: center;
+    }
+    .feature-item {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    /* About Section */
+    .about {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      color: #666;
+    }
+
+    /* Services Section */
+    .services {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 1rem;
+    }
+    .service-item {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 1rem;
+    }
+    .service-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Landing Page</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Creative Digital Agency</h1>
+    <p>We provide high-quality digital solutions for your business</p>
+    <div class="buttons">
+      <a href="#" class="btn">Read More</a>
+      <a href="#" class="btn">Request a Consult</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-item">
+      <h3>Launching Business</h3>
+      <p>Industry-standard services for a successful launch</p>
+    </div>
+    <div class="feature-item">
+      <h3>Online Support Team</h3>
+      <p>24/7 support for all your needs</p>
+    </div>
+    <div class="feature-item">
+      <h3>Time Management</h3>
+      <p>Efficient solutions to save time and resources</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We have 15 years of experience achieving better results for our clients with innovative digital solutions.</p>
+    <a href="#" class="btn">Read More</a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="service-item">
+      <img src="service1.jpg" alt="User Experience">
+      <h3>User Experience</h3>
+    </div>
+    <div class="service-item">
+      <img src="service2.jpg" alt="Creative Design">
+      <h3>Creative Design</h3>
+    </div>
+    <div class="service-item">
+      <img src="service3.jpg" alt="Retina Ready">
+      <h3>Retina Ready</h3>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Digital Agency. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+// script.js
+const display = document.querySelector('.display');
+const buttons = document.querySelectorAll('.buttons button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (button.textContent === 'AC') {
+            display.textContent = '';
+        } else if (button.textContent === 'C') {
+            display.textContent = display.textContent.slice(0, -1);
+        } else if (button.textContent === '=') {
+            try {
+                display.textContent = eval(display.textContent);
+            } catch (error) {
+                display.textContent = 'Error';
+            }
+        } else {
+            display.textContent += button.textContent;
+        }
+    });
+});
